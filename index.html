@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+    <script src="js/main.js" charset="utf-8"></script>
+    <title>My List - Welcome</title>
+  </head>
+  <body>
+    <header>
+        <div class="brand">
+          <h1>My Quick List</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+    </header>
+    <div class="list-container">
+      <div class="col1">
+        <h2>Create you list here</h2>
+        <span>Use the "@" Symbol to start creating a new List</span>
+        <div class="input">
+            <input type="text" class="textbox" placeholder="Enter item name" onKeyDown="if(event.keyCode==13) checkValue();"  id="text">
+        </div>
+        <button class="list-remove-link" type="button" onclick="clearList();" name="button">Clear List</button>
+      </div>
+      <div class="col2" id="col2">
+          <h2>Your List is Here</h2>
+      </div>
+    </div>
+  </body>
+</html>
